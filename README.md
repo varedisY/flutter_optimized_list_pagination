@@ -20,8 +20,6 @@ This documentation covers an optimized Flutter code snippet for a message list, 
 **1. Dependencies:**
 
 - `easy_debounce`: Provides throttling functionality (`EasyThrottle`).
-- `flutter`: Core Flutter libraries.
-- `flutter_performance/list/message.dart`: Assumed to contain the `MessageModel` definition.
 - `uuid`: Generates unique message IDs.
 
 **2. Message Model:**
@@ -49,7 +47,7 @@ class MessageList extends StatefulWidget {
 class _MessageListState extends State<MessageList> {
   final ScrollController _controller = ScrollController();
   List<MessageModel> messageList = [];
-  final Uuid uuid = Uuid(); // Assuming singleton or proper usage
+  final Uuid uuid = Uuid(); 
 
   @override
   void initState() {
