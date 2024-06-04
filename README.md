@@ -17,10 +17,25 @@ This documentation covers an optimized Flutter code snippet for a message list, 
 
 **Code Breakdown:**
 
-**1. Dependencies:**
+**1. Installation:**
 
-- `easy_debounce`: Provides throttling functionality (`EasyThrottle`).
-- `uuid`: Generates unique message IDs.
+**1. `uuid`:**
+
+- **Purpose:** Generates unique identifiers (UUIDs) for message items.
+- **Installation:**
+
+```bash
+pub add uuid
+```
+
+**2. `easy_debounce`:**
+
+- **Purpose:** Provides throttling functionality to prevent excessive API calls or other operations.
+- **Installation:**
+
+```bash
+pub add easy_debounce
+```
 
 **2. Message Model:**
 
@@ -154,4 +169,3 @@ This section delves deeper into the key functionalities that enhance the perform
   - `EasyThrottle` prevents excessive API calls for new messages.
 
 This combination ensures that the list renders efficiently, loads new messages only when needed, and avoids overloading the server or the user's device.
-
